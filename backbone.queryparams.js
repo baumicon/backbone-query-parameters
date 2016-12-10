@@ -38,7 +38,7 @@ _.extend(Backbone.History.prototype, {
         if (!fragment.indexOf(root)) {
           fragment = fragment.substr(root.length);
         }
-        if (search && this._hasPushState) {
+        if (search && this._usePushState) {
           fragment += search;
         }
       } else {
